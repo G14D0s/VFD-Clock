@@ -34,9 +34,6 @@ void setup() {
   }
 }
 
-
-
-
 void loop() {
   RTC_UhrzeitErfassen();
   //printTime();
