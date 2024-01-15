@@ -8,3 +8,5 @@ Die Dokumentation / Ausarbeitung findet sich hier:
 [VFD - Ausarbeitung](Documentation/VFD-Ausarbeitung.md)
 
 [Videos](https://drive.google.com/drive/folders/1unJfzBfumFYsPnYGjSA5P8ESAhW6MluK?usp=sharing)
+
+[neuester Release mit PDF](https://github.com/G14D0s/VFD-Clock/releases/tag/Release)
