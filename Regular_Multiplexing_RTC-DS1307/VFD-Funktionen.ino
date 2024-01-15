@@ -9,7 +9,7 @@ void VFDAnsteuerung(long f, long AnPerc) {
   //f - Bildschirmfrequenz
   //AnPerc - Helligkeit in %
 
-
+  // hier wird durch jedes Feld iteriert
   for (int Feld = 0; Feld <= 10; Feld++) {
     //AnodenDurchLauf(Feld, f, AnPerc);
     FelderDurchLauf(Feld, f, AnPerc);
@@ -35,7 +35,7 @@ void FelderDurchLauf(int Feld, long f, long AnPerc){
   ///////////////////////////////////////
 
   SchreibFeldUndAnoden(Feld, false);
-    //digitalWrite(13,HIGH);
+    //digitalWrite(13,HIGH);  // zum testen benutzt
   delayMicroseconds(offtime);
     //digitalWrite(13,LOW);
 }
@@ -54,26 +54,11 @@ void SchreibFeldUndAnoden(int Feld, bool AnOAus) {
       Serial.print("Array Value for Pin: ");
       Serial.println(VFDTabelle[Feld][AktuelleAnode]);
       */
+      // und in jedem Feld die einzelnen Anoden angesteuert
       digitalWrite(AnodenPins[AktuelleAnode], VFDTabelle[Feld][AktuelleAnode]);
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 void AnodenDurchLauf(int Spalte, int f, int AnPerc) {

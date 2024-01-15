@@ -4,8 +4,9 @@
 Adafruit_MCP23X17 mcp1;
 
 #include <TimeLib.h>
-#include <DS1307RTC.h>
+#include <DS1307RTC.h> // gilt auch für DS3231
 
+// externe variablen können über verschiedene Sketche in einem ordner verwendet werden.
 extern unsigned long currentMillis;
 extern unsigned long seconds;
 extern unsigned long minutes;
@@ -25,25 +26,20 @@ void setup() {
     Serial.println("I2C Success!");
   }
 
+  // initialisieren aller Ausgänge
   for (byte i = 0; i <=  15; i++) {
     mcp1.pinMode(i, OUTPUT);
   }
-
   for (byte i = 0; i <= 13; i++){
     pinMode(i, OUTPUT);
   }
 }
 
 void loop() {
-  RTC_UhrzeitErfassen();
+  RTC_UhrzeitErfassen();  // abspeichern der Zeit in Variabeln
   //printTime();
-  UhrzeitZuArray();
+  UhrzeitZuArray();       // Übersetzen der Zeit in Array
   //ArrayAusdruck(VFDTabelle);
-
-  VFDAnsteuerung(10,100); //frequenz von 50 und Helligkeit von 100%
-
+                          // Ansteuern des Displays mit Werten aus dem Array 
+  VFDAnsteuerung(50,100); // frequenz von 50 und Helligkeit von 100%
 }
-
-
-
-
