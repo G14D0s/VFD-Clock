@@ -1,4 +1,4 @@
-
+// developed by Florian Hoos, 2024-01-15
 bool VFDTabelle[11][10]{
 // Anoden: 
 // A,B,C,D,E,F,G,7,8,9     Grids:

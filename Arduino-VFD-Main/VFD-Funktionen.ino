@@ -1,4 +1,4 @@
-
+// developed by Florian Hoos, 2024-01-15
 extern bool VFDTabelle[11][10];
 
 //                      a,  b,  c, d, e, f, g

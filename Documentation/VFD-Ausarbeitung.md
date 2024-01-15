@@ -2,6 +2,7 @@
 tags:
   - Projekte/VFD-Wecker
 ---
+Florian Hoos, EATb26 - 2024-01-15
 ![VFD_On.jpg|600](VFD_On.jpg)
 # 1. Auswahl der Schaltung
 Für dieses Projekt habe ich mich entschieden, eine alte Fluoreszenz-Anzeige aus einem auseinandergenommenen Küchenradio wieder funktionstüchtig zu machen. Es handelt sich um ein *Vacuum Fluorescent Display* mit mehreren 7-Segment-Anzeigen und einigen Symbolen auf insgesamt 11 Feldern.
